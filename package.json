@@ -1,0 +1,40 @@
+{
+    "name": "bajji-erc721-deploy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "format": "prettier --write --ignore-path .prettierignore ./ ",
+        "compile": "rm -rf docs/* && npm run format && npx hardhat clean && npx hardhat compile && npx hardhat docgen && npx hardhat typechain"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-foundry": "^1.0.1",
+        "@openzeppelin/contracts": "^4.9.0",
+        "@openzeppelin/contracts-upgradeable": "^4.9.2",
+        "@typechain/ethers-v5": "^10.2.1",
+        "@typechain/hardhat": "^6.1.6",
+        "@types/ethereum-block-by-date": "^1.4.1",
+        "@types/node": "^16.18.53",
+        "axios": "^1.4.0",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.16.1",
+        "hardhat-abi-exporter": "^2.4.1",
+        "hardhat-contract-sizer": "^2.8.0",
+        "hardhat-deploy-ethers": "^0.3.0-beta.13",
+        "hardhat-gas-reporter": "^1.0.9",
+        "prettier": "^2.8.2",
+        "prettier-plugin-solidity": "^1.1.1",
+        "solidity-coverage": "^0.8.2",
+        "solidity-docgen": "^0.6.0-beta.34",
+        "ts-node": "^10.9.1",
+        "typechain": "^8.1.1",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "fastify": "^4.23.2",
+        "operator-filter-registry": "^1.4.2"
+    }
+}
